@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tahiat Mizan Orchi | Portfolio</title>
+<meta name="description" content="Portfolio of Tahiat Mizan Orchi: environmental research on waste-derived adsorbents and faecal sludge to crude oil, plus land development engineering.">
+<meta name="theme-color" content="#0d6b55">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#home">
+    <span class="mark">TO</span>
+    <div>Tahiat Mizan Orchi<small>ENVIRONMENTAL RESEARCHER</small></div>
+  </a>
+  <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#education">Education</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Remote Land Development Engineer · Environmental Researcher</div>
+      <h1>Turning waste into water solutions.<br><em>Designing resilient land and infrastructure.</em></h1>
+      <p class="lead">
+        I study how PFAS and other emerging contaminants can be removed using low-cost adsorbents, including
+        waste such as cigarette filters. My work connects contaminant removal, water treatment, waste-to-energy
+        and stormwater management.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore my research →</a>
+        <a class="btn secondary" href="#contact">Get in touch</a>
+      </div>
+      <div class="topics">
+        <span>PFAS &amp; CECs</span><span>Activated Carbon</span><span>Water Treatment</span><span>Waste-to-Energy</span><span>Stormwater</span>
+      </div>
+      <div class="profile-links">
+        <a href="https://linkedin.com/in/tahiatmizan" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://researchgate.net/profile/Tahiat-Mizan" target="_blank" rel="noopener">ResearchGate ↗</a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;to=tahiat.kuet2k16@gmail.com" target="_blank" rel="noopener">Email ↗</a>
+      </div>
+    </div>
+
+    <div class="photo-hero">
+      <div class="portrait-frame">
+        <!-- Add a photo: save it as images/portrait.jpg and replace the placeholder below with <img src="images/portrait.jpg" alt="Tahiat Mizan Orchi"> -->
+        <img src="images/profile.webp" alt="Tahiat Mizan Orchi" loading="eager">
+        <!-- ... -->
+        <div class="portrait-placeholder" hidden>Your photo</div>
+      </div>
+      <div class="status-card">
+        <b>Currently</b>
+        <img class="status-photo" src="images/flood-scene.svg" alt="Animated illustration of heavy rain and a broken road" loading="lazy">
+        <strong>Working on flood prediction with LLMs</strong>
+        <span>Using time-series models and LLMs to assess the vulnerability of road infrastructure to flooding in Bangladesh.</span>
+        <a class="status-link" href="flood-prediction.html">Explore more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section white">
+    <div class="section-label">01 / ABOUT</div>
+    <div class="about-grid">
+      <div>
+        <h2>Chemistry, environment and <em>sustainable solutions.</em></h2>
+      </div>
+      <div class="body-copy">
+        <p>
+          My current research focuses on understanding the chemical behavior of PFAS, CECs and other emerging
+          contaminants across water, soil and interconnected environmental systems, so that the most effective
+          treatment can be designed.
+        </p>
+        <p>
+          Part of my research is waste-to-resource recovery, including waste-to-energy through hydrothermal
+          liquefaction (HTL).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="section">
+    <div class="section-label">02 / RESEARCH</div>
+    <h2>Research <em>interests.</em></h2>
+    <div class="tag-row">
+      <span>Environmental engineering</span>
+      <span>Water resources &amp; stormwater</span>
+      <span>Waste-to-energy</span>
+      <span>Wastewater treatment</span>
+      <span>Hydrothermal liquefaction</span>
+      <span>Sustainable infrastructure</span>
+    </div>
+
+    <h2 class="sub-heading">Research <em>experience.</em></h2>
+    <p class="muted">Select a project to see its process diagram.</p>
+    <div class="card-grid">
+      <button class="card research-card" data-dialog="dlg-gw">
+        <div class="card-banner">
+          <img src="images/waste-safe-banner.png" alt="Iron and manganese removal using cigarette filter based activated carbon" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-date">2021 – 2022 · Undergraduate thesis, KUET</div>
+          <h3>Iron &amp; manganese removal from groundwater</h3>
+          <p>I turned waste cigarette filters into activated carbon with KOH activation, then tested it in a filter column to remove iron and manganese from groundwater.</p>
+          <span class="card-link">Explore here</span>
+        </div>
+      </button>
+      <button class="card research-card" data-dialog="dlg-htl">
+        <div class="card-banner card-banner-text">
+          <span>SOIL project · EPRC</span>
+        </div>
+        <div class="card-body">
+          <div class="card-date">April – September 2022 · Research assistant</div>
+          <h3>Faecal sludge to crude oil (SOIL project)</h3>
+          <p>As a research assistant on the government-funded SOIL project, I worked on producing crude oil from faecal sludge by hydrothermal liquefaction, and characterized the bio-crude.</p>
+          <span class="card-link">Explore here</span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Dialog: iron and manganese -->
+    <dialog id="dlg-gw" class="chart-dialog">
+      <div class="dialog-head">
+        <h3>Iron &amp; manganese removal</h3>
+        <button class="dialog-close" aria-label="Close">×</button>
+      </div>
+      <div class="step-grid">
+      <div class="step">
+        <p class="step-text">Cigarette butts are collected, washed, unwrapped and oven-dried, then carbonized in a muffle furnace at 500°C for 4 hours to make charcoal. The charcoal is then impregnated with KOH (carbonaceous material to KOH ratios of 1:1.5, 1:2 and 1:2.5) to produce activated carbon.</p>
+        <img class="figure-img" src="images/fig-1-activated-carbon.png" alt="Process for making activated carbon from cigarette butts" loading="lazy">
+      </div>
+      <div class="step">
+        <p class="step-text">An overview of the laboratory work, from the filter columns to the water quality tests.</p>
+        <div class="collage">
+          <figure>
+            <img src="images/fig-2-filter-model.png" alt="Three laboratory filter columns: sand, charcoal and activated carbon" loading="lazy">
+            <figcaption><strong>Three filters:</strong> sand, charcoal, and activated carbon from cigarette filters (charcoal 5 cm, activated carbon 5 cm, Sylhet sand 2.5 cm, Kustia sand 2.5 cm).</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fig-3-water-sources.png" alt="Iron water and tap water samples" loading="lazy">
+            <figcaption><strong>Contaminated water:</strong> iron water and tap water samples.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/fig-4-methylene-blue.png" alt="Methylene blue adsorption process" loading="lazy">
+            <figcaption><strong>Methylene blue adsorption:</strong> Langmuir and Freundlich isotherms, using CFAC-2 and CFAC-2.5.</figcaption>
+          </figure>
+          <figure class="wide">
+            <img src="images/fig-5-lab-tests.png" alt="Laboratory water quality tests" loading="lazy">
+            <figcaption><strong>Laboratory tests:</strong> colour, turbidity, TDS, chloride, iron, manganese and hardness.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="step wide">
+        <p class="step-text">Removal efficiency (%) of each filter medium. The activated carbon filter made from cigarette filters removed 99% of iron and 97% of chloride, and performed best on most parameters.</p>
+        <div class="table-wrap">
+          <table class="eff-table">
+            <thead>
+              <tr><th>Filter media</th><th>Color</th><th>Turbidity</th><th>TDS</th><th>Chloride</th><th>Iron</th><th>Manganese</th><th>Hardness</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Sand filter</td><td>47.3</td><td>1.66</td><td>11</td><td>0.39</td><td>95</td><td>0</td><td>4</td></tr>
+              <tr><td>Charcoal filter</td><td>76</td><td>71</td><td>50</td><td>84</td><td>96</td><td>25</td><td>2.63</td></tr>
+              <tr class="best"><td>Activated carbon filter</td><td>94</td><td>77</td><td>61.3</td><td>97</td><td>99</td><td>33</td><td>36</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-nav">
+        <button type="button" class="car-prev" aria-label="Previous step">‹</button>
+        <span class="car-count"></span>
+        <button type="button" class="car-next" aria-label="Next step">›</button>
+      </div>
+    </dialog>
+
+    <!-- Dialog: HTL -->
+    <dialog id="dlg-htl" class="chart-dialog">
+      <div class="dialog-head">
+        <h3>Faecal sludge to crude oil</h3>
+        <button class="dialog-close" aria-label="Close">×</button>
+      </div>
+      <img class="figure-img" src="images/graphical-abstract.png" alt="Graphical abstract of co-HTL: from wastewater and faecal sludge to crude oil" loading="lazy">
+      <p class="chart-note"><a href="images/graphical-abstract.png" target="_blank" rel="noopener">Open full image ↗</a></p>
+      <ol class="flow">
+        <li>Faecal sludge and wastewater (organic matter)</li>
+        <li>Microalgae cultivation, using nutrients from digestate</li>
+        <li>Microalgae harvesting</li>
+        <li>Anaerobic digestion, producing biogas and digestate</li>
+        <li>HTL and co-HTL in the HTL reactor</li>
+        <li>Product separation</li>
+        <li class="flow-end">Analysis: elemental analysis, FTIR, GC-FID</li>
+      </ol>
+    </dialog>
+
+    <h2 class="sub-heading">Techniques &amp; <em>tools.</em></h2>
+    <div class="tag-row">
+      <span>Field sampling</span>
+      <span>Laboratory experiments</span>
+      <span>GC-FID</span>
+      <span>FTIR</span>
+      <span>Adsorption isotherms</span>
+      <span>Environmental data analysis</span>
+      <span>Scientific writing</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section white">
+    <div class="section-label">03 / EXPERIENCE</div>
+    <h2>Where I have <em>worked.</em></h2>
+    <div class="timeline">
+      <article class="entry">
+        <div class="entry-date">Sep 2024 – Present</div>
+        <div>
+          <h3>Remote Land Development Engineer</h3>
+          <p class="entry-org">Hopeconsulting · Arkansas, USA</p>
+          <ul class="bullets">
+            <li>Completed 24+ land development projects in Benton City, Bryant and Little Rock, Arkansas, with 8+ more in progress.</li>
+            <li>Manage grading, stormwater drainage, utilities and site development from concept through construction documents.</li>
+            <li>Perform hydrologic and hydraulic analysis, drainage design and detention pond design.</li>
+            <li>Prepare SWPPP and erosion control plans.</li>
+          </ul>
+          <div class="tag-row small">
+            <span>Civil 3D</span><span>SSA</span><span>HEC-RAS</span><span>QGIS</span>
+          </div>
+          <h4 class="step-title" style="margin-top:22px">Land development projects</h4>
+          <div class="project-carousel">
+          <button type="button" class="pg-btn pg-prev" aria-label="Previous projects">‹</button>
+          <div class="project-gallery">
+            <figure class="land-card">
+              <img src="images/land-grading.png" alt="Grading plan" loading="lazy">
+              <figcaption><strong>Grading plan</strong>Grading design for a land development site.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-storm-network.png" alt="Storm network analysis model" loading="lazy">
+              <figcaption><strong>Storm network analysis</strong>Storm drainage network with inlets, pipes and outfalls.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-pond-hydrograph.png" alt="Pond design hydrograph" loading="lazy">
+              <figcaption><strong>Pond design</strong>Pre- and post-development hydrographs for a detention pond.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-pond-stage.png" alt="Pond design stage discharge" loading="lazy">
+              <figcaption><strong>Pond design</strong>Stage-discharge and storage estimate for the pond.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-drainage-plan.png?v=2" alt="Drainage plan" loading="lazy">
+              <figcaption><strong>Drainage plan</strong>Storm drainage layout with pipe and inlet information.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-sewer-plan.png?v=2" alt="Sewer plan" loading="lazy">
+              <figcaption><strong>Sewer plan</strong>Sanitary sewer layout for the site.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-water-plan.png?v=2" alt="Water plan" loading="lazy">
+              <figcaption><strong>Water plan</strong>Water distribution layout for the site.</figcaption>
+            </figure>
+            <figure class="land-card">
+              <img src="images/land-site-plan.png" alt="Commercial site plan" loading="lazy">
+              <figcaption><strong>Commercial site plan</strong>Site layout for a commercial development.</figcaption>
+            </figure>
+          </div>
+          <button type="button" class="pg-btn pg-next" aria-label="Next projects">›</button>
+          </div>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">May – Sep 2024</div>
+        <div>
+          <h3>Structural Engineer</h3>
+          <p class="entry-org">Nde.com.bd · Dhaka, Bangladesh</p>
+          <ul class="bullets">
+            <li>Supported structural design, estimation, fabrication drawings and site coordination for building projects, in line with BNBC.</li>
+          </ul>
+          <div class="project-carousel">
+          <button type="button" class="pg-btn pg-prev" aria-label="Previous photos">‹</button>
+          <div class="project-gallery">
+            <img src="images/structural-1.jpg" alt="Structural engineering project, Nde.com.bd" loading="lazy">
+            <img src="images/structural-2.jpg" alt="Structural engineering project, Nde.com.bd" loading="lazy">
+            <img src="images/structural-3.jpg" alt="Structural engineering project, Nde.com.bd" loading="lazy">
+            <img src="images/structural-4.jpg" alt="Structural engineering project, Nde.com.bd" loading="lazy">
+          </div>
+          <button type="button" class="pg-btn pg-next" aria-label="Next photos">›</button>
+          </div>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Sep 2022 – Apr 2024</div>
+        <div>
+          <h3>Assistant Design Engineer</h3>
+          <p class="entry-org">Bangladesh Steel Building System · Dhaka, Bangladesh</p>
+          <ul class="bullets">
+            <li>Supported structural steel design, BOQ and estimation, and fabrication drawings.</li>
+            <li>Executed 10+ structural projects in Gazipur and Chattogram, meeting BNBC and applicable codes.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Apr – Sep 2022</div>
+        <div>
+          <h3>Research Assistant</h3>
+          <p class="entry-org">SOIL project, funded by EPRC · Bangladesh</p>
+          <ul class="bullets">
+            <li>Worked on producing high-yield crude oil from faecal sludge by hydrothermal liquefaction, supporting sustainable development.</li>
+            <li>Characterized bio-crude using GC-FID and FTIR.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Apr 2021 – Apr 2022</div>
+        <div>
+          <h3>Undergraduate Researcher</h3>
+          <p class="entry-org">Khulna University of Engineering &amp; Technology (KUET) · Supervisor: Dr. Saiful Islam</p>
+          <ul class="bullets">
+            <li>Thesis on iron and manganese removal from groundwater using cigarette filter-based activated carbon.</li>
+            <li>Built sand, charcoal and activated carbon filters, and evaluated methylene blue adsorption with Langmuir and Freundlich models.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <h2 class="sub-heading">Technical <em>skills.</em></h2>
+    <div class="tag-row">
+      <span>C</span><span>C++</span><span>Python</span><span>STAAD.Pro</span><span>ETABS</span><span>AutoCAD</span><span>Civil 3D</span><span>SSA</span><span>QGIS</span><span>HEC-RAS</span><span>EPANET</span><span>BIM</span><span>OriginPro</span><span>LaTeX</span>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="section">
+    <div class="section-label">04 / PUBLICATIONS</div>
+    <h2>Selected <em>publications.</em></h2>
+    <ol class="pub-list">
+      <li>
+        <span class="pub-year">2023</span>
+        <div>
+          <a class="pub-link" href="https://www.researchgate.net/publication/374265475_Iron_and_Manganese_removal_from_groundwater_using_cigarette_filter-based_activated_carbon" target="_blank" rel="noopener"><strong>Iron and manganese removal from groundwater using cigarette filter-based activated carbon</strong></a>
+          <span class="pub-meta">WasteSafe 2023</span>
+        </div>
+      </li>
+      <li>
+        <span class="pub-year">2023</span>
+        <div>
+          <a class="pub-link" href="https://www.researchgate.net/publication/374264903_Global_plastic_waste_scenario_a_review_on_production_fate_and_future_prospects" target="_blank" rel="noopener"><strong>Global plastic waste scenario: a review on production, fate and future prospects</strong></a>
+          <span class="pub-meta">WasteSafe 2023</span>
+        </div>
+      </li>
+      <li>
+        <span class="pub-year">2022</span>
+        <div>
+          <a class="pub-link" href="https://www.researchgate.net/publication/377721904_UTILIZATION_AND_CHARACTERIZATION_OF_ACTIVATED_CARBON_PREPARED_FROM_CIGARETTE_FILTER_WASTES_A_REVIEW" target="_blank" rel="noopener"><strong>Utilization and Characterization of Activated Carbon Prepared From Cigarette Filter Wastes: A Review</strong></a>
+          <span class="pub-meta">ICCESD 2022</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section white">
+    <div class="section-label">05 / EDUCATION</div>
+    <h2>Education &amp; <em>recognition.</em></h2>
+    <ol class="pub-list">
+      <li>
+        <span class="pub-year">2017–2022</span>
+        <div>
+          <strong>B.Sc. in Civil Engineering</strong>
+          <span class="pub-meta">Khulna University of Engineering &amp; Technology (KUET) · CGPA 3.19 / 4.00</span>
+        </div>
+      </li>
+      <li>
+        <span class="pub-year">2017–2022</span>
+        <div>
+          <strong>Vocational Scholarship</strong>
+          <span class="pub-meta">KUET</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-label">06 / CONTACT</div>
+    <h2>Let's <em>work together.</em></h2>
+    <p class="contact-lead">Open to research collaborations, engineering projects and conversations about water and waste treatment.</p>
+    <a class="btn primary" href="https://mail.google.com/mail/?view=cm&amp;to=tahiat.kuet2k16@gmail.com" target="_blank" rel="noopener">tahiat.kuet2k16@gmail.com</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Tahiat Mizan Orchi</span>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  const menuBtn = document.querySelector(".menu");
+  const nav = document.querySelector(".nav nav");
+  menuBtn.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+  }));
+
+  // Step-by-step viewer for the iron and manganese research
+  (() => {
+    const dlg = document.getElementById("dlg-gw");
+    const grid = dlg.querySelector(".step-grid");
+    const steps = [...grid.querySelectorAll(":scope > .step")];
+    const count = dlg.querySelector(".car-count");
+    let current = 0;
+    const show = i => {
+      current = (i + steps.length) % steps.length;
+      steps.forEach((s, k) => s.classList.toggle("is-active", k === current));
+      count.textContent = `${current + 1} / ${steps.length}`;
+      dlg.querySelector(".step-grid").scrollTop = 0;
+    };
+    dlg.querySelector(".car-prev").addEventListener("click", () => show(current - 1));
+    dlg.querySelector(".car-next").addEventListener("click", () => show(current + 1));
+    document.querySelector('[data-dialog="dlg-gw"]').addEventListener("click", () => show(0));
+    show(0);
+  })();
+
+  // Structural photos: one row with side arrows and automatic sliding
+  (() => {
+    document.querySelectorAll(".project-carousel").forEach(wrap => {
+    const track = wrap.querySelector(".project-gallery");
+    const step = () => {
+      const first = track.querySelector("img");
+      return first.getBoundingClientRect().width + 12;
+    };
+    const go = dir => {
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      if (dir > 0 && atEnd) track.scrollTo({ left: 0, behavior: "smooth" });
+      else track.scrollBy({ left: dir * step(), behavior: "smooth" });
+    };
+    wrap.querySelector(".pg-prev").addEventListener("click", () => go(-1));
+    wrap.querySelector(".pg-next").addEventListener("click", () => go(1));
+    let paused = false;
+    wrap.addEventListener("mouseenter", () => paused = true);
+    wrap.addEventListener("mouseleave", () => paused = false);
+    setInterval(() => { if (!paused) go(1); }, 3500);
+    });
+  })();
+
+  // Click a project photo to view it, then step through with the arrows
+  const photos = [...document.querySelectorAll(".project-gallery img")];
+  const lightbox = document.createElement("dialog");
+  lightbox.className = "photo-lightbox";
+  lightbox.innerHTML = '<img alt=""><button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous photo">‹</button><button type="button" class="lb-next" aria-label="Next photo">›</button><span class="lb-count"></span>';
+  document.body.appendChild(lightbox);
+  let photoIndex = 0;
+  const showPhoto = i => {
+    photoIndex = (i + photos.length) % photos.length;
+    const big = lightbox.querySelector("img");
+    big.src = photos[photoIndex].src;
+    big.alt = photos[photoIndex].alt;
+    lightbox.querySelector(".lb-count").textContent = `${photoIndex + 1} / ${photos.length}`;
+  };
+  lightbox.querySelector(".lb-close").addEventListener("click", () => lightbox.close());
+  lightbox.querySelector(".lb-prev").addEventListener("click", () => showPhoto(photoIndex - 1));
+  lightbox.querySelector(".lb-next").addEventListener("click", () => showPhoto(photoIndex + 1));
+  lightbox.addEventListener("click", e => { if (e.target === lightbox) lightbox.close(); });
+  photos.forEach((img, i) => img.addEventListener("click", () => { showPhoto(i); lightbox.showModal(); }));
+
+  // Research diagram dialogs
+  document.querySelectorAll("[data-dialog]").forEach(btn => {
+    btn.addEventListener("click", () => document.getElementById(btn.dataset.dialog).showModal());
+  });
+  document.querySelectorAll(".chart-dialog").forEach(dlg => {
+    dlg.querySelector(".dialog-close").addEventListener("click", () => dlg.close());
+    dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+  });
+</script>
+</body>
+</html>

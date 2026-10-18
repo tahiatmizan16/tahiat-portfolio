@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flood Prediction with LLMs | Tahiat Mizan Orchi</title>
+<meta name="description" content="Plan for a flood prediction project in Bangladesh using time-series models and LLMs, with road vulnerability mapping.">
+<meta name="theme-color" content="#0d6b55">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html">
+    <span class="mark">TO</span>
+    <div>Tahiat Mizan Orchi<small>BACK TO PORTFOLIO</small></div>
+  </a>
+  <nav>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero plan-hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Project plan · In progress</div>
+      <h1>Flood prediction <em>with LLMs.</em></h1>
+      <p class="lead">
+        A plan to forecast flood risk for roads in Bangladesh. Numerical models predict river and rainfall
+        conditions, and LLMs help turn flood reports into usable data and clear explanations.
+      </p>
+      <div class="topics">
+        <span>Time-series forecasting</span><span>LLM document analysis</span><span>Road vulnerability</span><span>GIS</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <figure class="page-photo">
+      <img src="images/flood-scene.svg" alt="Animated illustration of heavy rain, rising flood water and a broken road" loading="lazy">
+      <figcaption>Heavy rain, rising water and a broken road: the kind of damage this project aims to flag in advance.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section white">
+    <div class="section-label">01 / GOAL</div>
+    <h2>What I want the <em>project to answer.</em></h2>
+    <div class="body-copy">
+      <p>Rank road segments by flood exposure over the next 1–3 days, using water-level forecasts, ground elevation and past flood records, and report the uncertainty of each ranking. The output is a plain-language summary and a map, so it's useful to someone who isn't a hydrology specialist.</p>
+      <p><strong>Future goal:</strong> predict washout, when fast water breaks away a road, once data on road material and water speed is available.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-label">02 / DATA</div>
+    <h2>Where the <em>information comes from.</em></h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-tag">Rainfall</div>
+        <h3>Daily rainfall records</h3>
+        <p>Station records from the Bangladesh Meteorological Department, with satellite rainfall (NASA GPM or ERA5) as a backup for gaps.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">River levels</div>
+        <h3>Water level history</h3>
+        <p>River and water-level records from BWDB, used to see how rainfall turns into flood conditions.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Roads</div>
+        <h3>Road network and elevation</h3>
+        <p>Road lines from OpenStreetMap or a local survey, with ground elevation to check which low-lying sections are exposed.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Text</div>
+        <h3>Flood reports and news</h3>
+        <p>Bulletins and reports describing past floods, used by the LLM to pull out dates, districts, rainfall totals and damage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-label">03 / METHOD</div>
+    <h2>Step by <em>step.</em></h2>
+    <ol class="flow">
+      <li>Collect and clean one station's rainfall and water-level history, then check for gaps and errors.</li>
+      <li>Build a simple baseline: predict tomorrow's water level from today's level, and measure the error.</li>
+      <li>Train a machine learning model (gradient boosting or an LSTM) on past rainfall and water levels to forecast several days ahead.</li>
+      <li>Use an LLM to read flood reports and extract a structured table of past flood events for checking the forecasts.</li>
+      <li>Join the predicted flood extent to the road network in QGIS, and flag road segments above a chosen flood depth.</li>
+      <li class="flow-end">Write a short plain-language warning for each flagged road, and publish the results.</li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <div class="section-label">04 / THE LLM'S ROLE</div>
+    <h2>What the LLM does, <em>and what it doesn't.</em></h2>
+    <div class="about-grid">
+      <div class="card">
+        <div class="card-tag">Does</div>
+        <h3>Reads and structures text</h3>
+        <p>Turns unstructured flood reports into a table, and answers questions about them with the source sentence shown.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Does</div>
+        <h3>Explains the forecast</h3>
+        <p>Rewrites the model's output as a clear warning for residents and engineers.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Doesn't</div>
+        <h3>Forecast the water level</h3>
+        <p>Numerical models make the prediction. The LLM is not trusted with the numbers, and its extracted data is checked by hand on a sample.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-label">05 / CHECKING THE RESULTS</div>
+    <h2>How I will know it <em>works.</em></h2>
+    <div class="body-copy">
+      <p>The forecast is compared with the simple baseline on held-out years it never saw during training. The LLM's extracted table is checked against the original reports for a sample of entries, and the error rate is reported alongside the results.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-label">06 / TOOLS</div>
+    <h2>What I will <em>use.</em></h2>
+    <div class="tag-row">
+      <span>Python</span><span>pandas</span><span>scikit-learn</span><span>LightGBM</span><span>PyTorch (LSTM)</span><span>QGIS</span><span>OpenStreetMap</span><span>Claude API</span>
+    </div>
+  </section>
+
+  <section class="section white">
+    <div class="section-label">07 / STATUS</div>
+    <h2>Where it <em>stands.</em></h2>
+    <div class="timeline">
+      <article class="entry">
+        <div class="entry-date">Now</div>
+        <div>
+          <h3>Planning and data search</h3>
+          <p class="entry-org">Choosing a pilot station and collecting its records.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Next</div>
+        <div>
+          <h3>Baseline and first model</h3>
+          <p class="entry-org">Simple comparison, then the machine learning forecast.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-date">Later</div>
+        <div>
+          <h3>LLM extraction and road mapping</h3>
+          <p class="entry-org">Structured flood events, road flags and the final write-up.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Tahiat Mizan Orchi</span>
+  <a href="index.html">Back to portfolio ↑</a>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
